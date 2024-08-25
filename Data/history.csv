@@ -1,0 +1,14 @@
+dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1,1.0,1.0,2024-08-25,Random Forest
+dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1,1.0,1.0,2024-08-25,Random Forest
+dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,9,78.02,56.0,2024-08-25,Random Forest
+dummy_id,Male,No,No,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,9,78.02,56.0,2024-08-25,Random Forest
+dummy_id,Male,No,No,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,9,7.02,6.0,2024-08-25,Random Forest
+dummy_id,Male,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,9,7.02,6.0,2024-08-25,Random Forest
+dummy_id,Male,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,9,7.02,6.0,2024-08-25,Random Forest
+dummy_id,Male,No,No,No,Yes,No,No,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,9,7.02,6.0,2024-08-25,Logistic Regression
+dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,28,104.8,3046.05,2024-08-25,Random Forest
+dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,28,104.8,3046.05,2024-08-25,Random Forest
+dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,28,104.8,3046.05,2024-08-25,Random Forest
+dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,28,104.8,3046.05,2024-08-25,Random Forest
+dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,28,104.8,3046.05,2024-08-25,Logistic Regression
+dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1,1.0,1.0,2024-08-25,Logistic Regression
