@@ -2,12 +2,6 @@ import pandas as pd
 import streamlit as st
 import os
 
-st.set_page_config(
-    page_title="History",
-    page_icon="📜",
-    layout="wide"
-)
-
 def load_history():
     history_file = "./Data/history.csv"  # Update the path as needed
     if os.path.exists(history_file):
@@ -45,7 +39,9 @@ def display_history():
     else:
         st.write("No data to display.")
 
-if __name__ == "__main__":
+def main():
     st.title("Prediction History")
     display_history()
 
+if __name__ == "__main__":
+    main()

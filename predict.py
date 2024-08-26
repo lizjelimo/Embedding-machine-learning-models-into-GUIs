@@ -3,13 +3,6 @@ import joblib
 import pandas as pd
 import os
 import datetime
-import sklearn
-
-st.set_page_config(
-    page_title="Predict",
-    page_icon="🔮",
-    layout="wide"
-)
 
 # Loading models
 @st.cache_resource(show_spinner="Loading Random Forest Model...")
@@ -131,9 +124,8 @@ def make_prediction(pipeline):
     st.markdown(f"### Prediction: {prediction}")
     st.markdown(f"### Probability: {probability}")
 
-# Main execution
-if __name__ == "__main__":
-    st.title("Make a prediction")
+def main():
+    st.title("Make a Prediction")
     display_form()
     
     # Display prediction result
@@ -149,3 +141,6 @@ if __name__ == "__main__":
     else:
         probability_of_no = probability[0] * 100
         st.markdown(f"### The client will not leave the company with a probability of {round(probability_of_no, 2)}%")
+
+if __name__ == "__main__":
+    main()
