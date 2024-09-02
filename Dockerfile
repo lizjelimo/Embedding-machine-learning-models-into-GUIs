@@ -12,7 +12,8 @@ RUN apt-get update && \
     python3-venv \
     python3-dev \
     build-essential \
-    && apt-get clean
+    && apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Set up locales
 RUN locale-gen en_US.UTF-8
@@ -26,12 +27,8 @@ RUN python3 -m venv venv && \
     pip install --upgrade pip && \
     pip install -r requirements.txt
 
-# Copy the .env file before copying the rest of the application code
-COPY .env /usr/app/src/.env
-
 # Copy the rest of the application code
 COPY ./ ./
 
 # Use the virtual environment's Python for running the application
-CMD ["venv/bin/streamlit", "run", "app.py"]
-
+CMD ["venv/bin/streamlit", "run", "app.py", "--server.port", "8501"]
