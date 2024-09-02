@@ -4,3 +4,6 @@ numpy
 joblib
 datetime
 scikit-learn
+plotly.express
+streamlit_shadcn_ui
+python-dotenv

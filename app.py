@@ -4,6 +4,7 @@ import dashboard
 import data
 import history 
 import predict
+import webbrowser
 
 # Initialize session state for authentication
 if 'authenticated' not in st.session_state:
@@ -13,7 +14,7 @@ if 'authenticated' not in st.session_state:
 def check_authentication():
     return st.session_state.get('authenticated', False)
 
-# Define a function to handle logout
+#Define a function to handle logout
 def logout():
     st.session_state['authenticated'] = False
     st.session_state.pop('username', None)
@@ -55,6 +56,21 @@ def show_home_page():
         - **Dashboard**:  
           Access an interactive overview of your churn analysis results. Visualize churn risks, explore customer segments, and dive deep into the insights that matter.
     """)
+    # Display the subheader
+    st.subheader("Need Help?")
+    
+    # Display the GitHub button
+    if st.button('Visit Our GitHub'):
+        # Open the GitHub repository in a new tab
+        webbrowser.open_new_tab('https://github.com/lizjelimo/Embedding-machine-learning-models-into-GUIs.git')
+    
+    # Display the Contact Me button
+    if st.button('Contact Me'):
+        # When the button is clicked, display a link to open the email client
+        st.markdown(
+            '<a href="mailto:your.email@example.com?subject=Contact%20from%20Streamlit%20App" target="_blank">Click here to contact me</a>',
+            unsafe_allow_html=True
+        )
 
 def main():
     if check_authentication():
@@ -67,7 +83,7 @@ def main():
             logout()
         
         # Navigation menu
-        st.sidebar.title("Navigation")
+        st.sidebar.title("Navigation:compass:")
         st.session_state['page'] = st.sidebar.selectbox(
             "Select Page", ["Home", "Dashboard", "Data", "History", "Predict"]
         )
@@ -83,19 +99,13 @@ def main():
             history.main()
         elif st.session_state['page'] == "Predict":
             predict.main()
+        else:
+            st.error("Page not found. Please select a valid page.")
     else:
-        # Show login form if not authenticated
-        login.show_login()
+            login.show_login()
+    
+            
+            
 
 if __name__ == "__main__":
     main()
-
-    
-
-            
-                
-            
-
-
-
-

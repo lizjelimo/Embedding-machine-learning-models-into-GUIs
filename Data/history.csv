@@ -13,3 +13,4 @@ dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-mo
 dummy_id,Female,Yes,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,28,104.8,3046.05,2024-08-25,Logistic Regression
 dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1,1.0,1.0,2024-08-25,Logistic Regression
 dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1,1.0,1.0,2024-08-26,Random Forest
+dummy_id,Male,Yes,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1,1.0,1.0,2024-08-26,Random Forest
