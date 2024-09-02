@@ -39,7 +39,7 @@ def show_login():
     st.warning("Please log in to continue.")
     return False
 
-# Example usage (if you want to run this file directly)
+
 if __name__ == "__main__":
     if 'authenticated' not in st.session_state:
         st.session_state['authenticated'] = False
